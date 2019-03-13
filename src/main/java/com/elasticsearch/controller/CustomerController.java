@@ -3,6 +3,7 @@ package com.elasticsearch.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -33,4 +34,18 @@ public class CustomerController {
 	public List<Customer> findByFirstName(@PathVariable String firstName) {
 		return repository.findByFirstname(firstName);
 	}
+	
+	@DeleteMapping("/customer/delete/{id}")
+	public String deleteCustomerById(@PathVariable String id) {
+		repository.deleteById(id);
+		return "deleted successfully";
+	}
+	
+	@DeleteMapping("/customer/deleteByName/{name}")
+	public int deleteCustomerByName(@PathVariable String name) {
+		return repository.deleteByFirstname(name);
+	}
+	
+	
+	
 }

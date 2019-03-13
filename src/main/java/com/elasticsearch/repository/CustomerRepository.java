@@ -12,4 +12,9 @@ public interface CustomerRepository extends ElasticsearchRepository<Customer,Str
 
 	List<Customer> findByFirstname(String firstName);
 
+
+	int deleteByFirstname(String name);
+
+	void deleteById(String id);
+
 }
