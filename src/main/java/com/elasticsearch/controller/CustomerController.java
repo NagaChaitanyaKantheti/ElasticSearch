@@ -46,6 +46,10 @@ public class CustomerController {
 		return repository.deleteByFirstname(name);
 	}
 	
+	@GetMapping("/customerByAge/{age}")
+	public List<Customer> findByAge(@PathVariable int age){
+		return repository.findByAge(age);
+	}
 	
 	
 }

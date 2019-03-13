@@ -17,4 +17,7 @@ public interface CustomerRepository extends ElasticsearchRepository<Customer,Str
 
 	void deleteById(String id);
 
+
+	List<Customer> findByAge(int age);
+
 }
