@@ -50,6 +50,6 @@ public class CustomerController {
 	public List<Customer> findByAge(@PathVariable int age){
 		return repository.findByAge(age);
 	}
-	
+
 	
 }
