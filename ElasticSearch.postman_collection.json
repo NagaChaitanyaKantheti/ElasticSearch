@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "85aaa9ed-fd26-42f3-8a45-236e90862f83",
+		"name": "ElasticSearch",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/customer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "access_token=5C786AD7FC13E9CCFAF5D6BD88D342EC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n\t{\t\n\t\t\"id\":\"1\",\n\t\t\"firstname\":\"Ramya\",\n\t\t\"lastname\":\"Kurapati\",\n\t\t\"age\":21\n\t},\n\t\t{\t\n\t\t\"id\":\"2\",\n\t\t\"firstname\":\"Chaitanya\",\n\t\t\"lastname\":\"Kantheti\",\n\t\t\"age\":21\n\t},\n\t\t{\t\n\t\t\"id\":\"3\",\n\t\t\"firstname\":\"Santhi\",\n\t\t\"lastname\":\"Gummidi\",\n\t\t\"age\":21\n\t},\n\t\t{\t\n\t\t\"id\":\"4\",\n\t\t\"firstname\":\"Radhika\",\n\t\t\"lastname\":\"Sarimella\",\n\t\t\"age\":21\n\t}\n]"
+				},
+				"url": {
+					"raw": "http://localhost:8080/customer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/customer",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "access_token=5C786AD7FC13E9CCFAF5D6BD88D342EC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n\t{\t\n\t\t\"id\":\"1\",\n\t\t\"firstname\":\"Ramya\",\n\t\t\"lastname\":\"Kurapati\",\n\t\t\"age\":21\n\t},\n\t\t{\t\n\t\t\"id\":\"2\",\n\t\t\"firstname\":\"Chaitanya\",\n\t\t\"lastname\":\"Kantheti\",\n\t\t\"age\":21\n\t},\n\t\t{\t\n\t\t\"id\":\"3\",\n\t\t\"firstname\":\"Santhi\",\n\t\t\"lastname\":\"Gummidi\",\n\t\t\"age\":21\n\t},\n\t\t{\t\n\t\t\"id\":\"4\",\n\t\t\"firstname\":\"Radhika\",\n\t\t\"lastname\":\"Sarimella\",\n\t\t\"age\":21\n\t}\n]"
+				},
+				"url": {
+					"raw": "http://localhost:8080/customer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/customer/Chaitanya",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "access_token=5C786AD7FC13E9CCFAF5D6BD88D342EC",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n\t{\t\n\t\t\"id\":\"1\",\n\t\t\"firstname\":\"Ramya\",\n\t\t\"lastname\":\"Kurapati\",\n\t\t\"age\":21\n\t},\n\t\t{\t\n\t\t\"id\":\"2\",\n\t\t\"firstname\":\"Chaitanya\",\n\t\t\"lastname\":\"Kantheti\",\n\t\t\"age\":21\n\t},\n\t\t{\t\n\t\t\"id\":\"3\",\n\t\t\"firstname\":\"Santhi\",\n\t\t\"lastname\":\"Gummidi\",\n\t\t\"age\":21\n\t},\n\t\t{\t\n\t\t\"id\":\"4\",\n\t\t\"firstname\":\"Radhika\",\n\t\t\"lastname\":\"Sarimella\",\n\t\t\"age\":21\n\t}\n]"
+				},
+				"url": {
+					"raw": "http://localhost:8080/customer/Chaitanya",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"Chaitanya"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
